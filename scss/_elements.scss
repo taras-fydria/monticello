@@ -1,0 +1,95 @@
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button {
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button {
+	display: inline-block;
+
+	&:hover {}
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+
+	&:focus {}
+}
+
+textarea {}
+
+.slaider-top {
+	position: relative;
+}
+
+
+
+.slick-dots {
+	list-style: none;
+	font-size: 0;
+	position: absolute;
+	right: 19px;
+	bottom: 50%;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transform: translateY(50%);
+
+	li+li {
+		margin-top: 30px;
+	}
+
+	button {
+		background: transparent;
+		border-radius: 50% 50%;
+		height: 9px;
+		width: 9px;
+		border: 1px #fff solid;
+		cursor: pointer;
+		display: block;
+		padding: 0;
+
+		&:hover,
+		&:active {
+			opacity: 0.5;
+		}
+
+		&:focus {
+			outline: none;
+		}
+	}
+}
+
+
+.slick-active {
+	button {
+		background: #fff;
+	}
+}
+
+.ba-button {
+	width: 188px;
+	height: 48px;
+	background: #fff;
+	border: #2c4058 solid 1px;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 300;
+
+	&:hover {
+		color: #fff;
+		background: #2c4058;
+	}
+}
